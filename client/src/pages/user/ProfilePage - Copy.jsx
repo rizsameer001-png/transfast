@@ -59,17 +59,8 @@ export function ProfilePage() {
             <div><label className="block text-sm font-semibold text-gray-700 mb-1.5">First Name</label><input className="input-field" value={form.firstName} onChange={e => setForm(f => ({...f, firstName: e.target.value}))} /></div>
             <div><label className="block text-sm font-semibold text-gray-700 mb-1.5">Last Name</label><input className="input-field" value={form.lastName} onChange={e => setForm(f => ({...f, lastName: e.target.value}))} /></div>
           </div>
-          {/*<div><label className="block text-sm font-semibold text-gray-700 mb-1.5">Phone</label><input className="input-field" value={form.phone} onChange={e => setForm(f => ({...f, phone: e.target.value}))} /></div>
+          <div><label className="block text-sm font-semibold text-gray-700 mb-1.5">Phone</label><input className="input-field" value={form.phone} onChange={e => setForm(f => ({...f, phone: e.target.value}))} /></div>
           <div><label className="block text-sm font-semibold text-gray-700 mb-1.5">Email</label><input className="input-field" value={user?.email} disabled className="input-field bg-gray-50 text-gray-500 cursor-not-allowed" /></div>
-          */}
-          <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1.5">Email</label>
-            <input
-              className="input-field bg-gray-50 text-gray-500 cursor-not-allowed"
-              value={user?.email}
-              disabled
-            />
-          </div>
           <button type="submit" disabled={saving} className="btn-primary">{saving ? 'Saving...' : 'Save Changes'}</button>
         </form>
       </div>
